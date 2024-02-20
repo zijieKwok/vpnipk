@@ -51,6 +51,11 @@ jobs:
 
         
 
+    - name: Modify
+      run: |
+        mkdir -p img
+        cp -rf luci-app-passwall/root/www/luci-static/passwall/* img/
+    
     - name: Apply
       run: |
         git add .
