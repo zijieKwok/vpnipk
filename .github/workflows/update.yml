@@ -1,4 +1,4 @@
-name: update.app
+name: update
 
 on: 
   repository_dispatch:
@@ -53,8 +53,8 @@ jobs:
 
     - name: Modify
       run: |
-        mkdir -p img
-        cp -rf luci-app-passwall/root/www/luci-static/passwall/* img/
+        mkdir -p luci-app-passwall/root/www/luci-static/passwall
+        cp -rf .github/un.svg luci-app-passwall/root/www/luci-static/passwall/
     
     - name: Apply
       run: |
