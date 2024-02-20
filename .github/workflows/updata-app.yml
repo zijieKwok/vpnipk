@@ -1,4 +1,4 @@
-name: update.luci-app-openclash
+name: update.app
 
 on: 
   repository_dispatch:
