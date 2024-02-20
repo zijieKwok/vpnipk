@@ -43,9 +43,7 @@ jobs:
         git clone --depth=1 https://github.com/kiddin9/openwrt-packages.git ./pass
         mv ./pass/luci-app-passwall ./luci-app-passwall
         rm -rf ./pass
-        rm -rf luci-app-passwall/root/www/luci-static/passwall
-        mkdir -p luci-app-passwall/root/www/luci-static/passwall
-        cp -rf flags/* luci-app-passwall/root/www/luci-static/passwall/
+        
         
 
         git clone --depth=1 https://github.com/vernesong/OpenClash.git -b dev
