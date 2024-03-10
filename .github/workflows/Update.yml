@@ -42,7 +42,7 @@ jobs:
         mv ./pass/luci-app-passwall ./
         rm -rf ./pass
         
-        sed -i '9i\PKG_VERSION:=4.75-6' luci-app-passwall/Makefile
+        sed -i '9i\PKG_VERSION:=4.75-8' luci-app-passwall/Makefile
         cp -rf flags/un.svg luci-app-passwall/root/www/luci-static/passwall/flags/
 
         git clone --depth=1 https://github.com/vernesong/OpenClash.git -b dev
